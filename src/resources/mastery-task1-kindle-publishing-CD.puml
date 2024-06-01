@@ -1,0 +1,9 @@
+@startuml
+
+class getBookActivity {
+    - RecommendationServiceClient recommendationServiceClient
+    - CatalogDao catalogDao
+    + getBookResponse execute(GetBookRequest)
+}
+
+@enduml
